@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding: 1% 12%;
+}
+
+.cabecalho__conteudo{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.cabecalho__conteudo__link{
+    color: white;
+    text-decoration: none;
+}
+
+.cabecalho__conteudo__button{
+    padding: 3% 15%;
+    border: none;
+    border-radius: 10px;
+    background-color: #06BE3D;
+    cursor: pointer;
+}
+
+.fa-brands{
+    font-size: 25px;
+}
+
+.apresentacao{
+    padding: 8% 10%;
+    background-image: url(imagens/ryan.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.apresentacao__conteudo{
+    text-align: center;
+}
+
+.apresentacao__conteudo h1 {
+    color: white;
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+.apresentacao__conteudo p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}

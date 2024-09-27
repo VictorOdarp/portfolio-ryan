@@ -35,7 +35,7 @@ body{
     padding: 3% 15%;
     border: none;
     border-radius: 10px;
-    background-color: #703676;
+    background-color: #911c9e;
     cursor: pointer;
 }
 
@@ -85,6 +85,13 @@ body{
 .sobremim__conteudo__texto{
     display: flex;
     flex-direction: column;
+    gap: 5px;
+}
+
+.sobremim__conteudo__texto h2 {
+    font-size: 1.8rem;
+    color: #911c9e;
+    box-shadow: 2px 2px 2px #703676;
 }
 
 .sobremim__conteudo__imagem{
@@ -101,11 +108,23 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 }
 
-.portfolio__conteudo h2 {
-    font-size: 3rem;
+.portfolio__conteudo__titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio__conteudo__titulo p{
+    font-size: 1.4rem;
+    color: #911c9e;
+    font-weight: 600;
+}
+
+.portfolio__conteudo__titulo h2 {
+    font-size: 2.5rem;
 }
 
 .portfolio__conteudo__imagens{
@@ -133,6 +152,22 @@ body{
     margin: 0.5% 0%;
 }
 
+.estilo-filosofia__titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estilo-filosofia__titulo p{
+    color: #911c9e;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.estilo-filosofia__titulo h2 {
+    font-size: 2.5rem;
+}
+
 .estilo-filosofia__conteudo{
     display: flex;
     justify-content: center;
@@ -152,8 +187,20 @@ body{
 .estilo-filosofia__conteudo__texto{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     width: 45%;
+}
+
+.estilo-filosofia__conteudo__texto__estrofe{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.estilo-filosofia__conteudo__texto__estrofe h2{
+    font-size: 2rem;
+    color: #911c9e;
+    box-shadow: 2px 2px 2px #911c9e;
 }
 
 .trabalhos{
@@ -164,11 +211,24 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
-.trabalhos__conteudo h2{
-    font-size: 3rem;
+.trabalhos__conteudo__titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trabalhos__conteudo__titulo p{
+    color:#911c9e;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.trabalhos__conteudo__titulo h2{
+    font-size: 2.5rem;
 }
 
 .trabalhos__conteudo__imagens{
@@ -183,4 +243,43 @@ body{
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.contato{
+    padding: 1% 10%;
+    background-color: rgb(14, 14, 14);
+}
+
+.contato__conteudo{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contato__titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato__titulo p {
+    color:#911c9e;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.contato__titulo h2 {
+    font-size: 2.5rem;
+}
+
+.contato__conteudo__formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.contato__conteudo__formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }

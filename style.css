@@ -31,24 +31,48 @@ body{
     text-decoration: none;
 }
 
+.cabecalho__conteudo__link:hover{
+    color: #911c9e;
+}
+
 .cabecalho__conteudo__button{
     padding: 3% 15%;
-    border: none;
+    border: 2px solid #911c9e;
     border-radius: 10px;
-    background-color: #911c9e;
+    background-color: rgb(14, 14, 14);
     cursor: pointer;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.cabecalho__conteudo__button:hover{
+    transform: scale(1.1);
+
 }
 
 .fa-brands{
     font-size: 25px;
 }
 
-.apresentacao{
+.apresentacao {
     padding: 8% 10%;
+    position: relative;
+    z-index: 1;
+}
+
+.apresentacao::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: url(imagens/bannerryan.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: -1;
 }
 
 .apresentacao__conteudo{
@@ -139,6 +163,29 @@ body{
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+    border: 3px solid transparent;
+    transition: 0.1s ease;
+}
+
+.portfolio__conteudo__imagens img:hover {
+    border: 3px solid #911c9e;
+    transform: scale(1.02);
+}
+
+.portfolio__conteudo__button {
+    text-decoration: none;
+    color: #911c9e;
+    background-color:rgb(14, 14, 14);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    border: #911c9e solid 1px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio__conteudo__button:hover {
+    transform: scale(1.12);
 }
 
 .estilo-filosofia{
@@ -172,16 +219,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
 }
 
 .estilo-filosofia__conteudo__imagens{
     display: flex;
+    justify-content: center;
     gap: 10px;
 }
 
 .estilo-filosofia__conteudo__imagens__imagem{
-    width: 300px;
+    width: 40%;
+    object-fit: cover;
 }
 
 .estilo-filosofia__conteudo__texto{
@@ -201,6 +249,22 @@ body{
     font-size: 2rem;
     color: #911c9e;
     box-shadow: 2px 2px 2px #911c9e;
+}
+
+.estilo-filosofia__conteudo__button {
+    text-decoration: none;
+    color: #911c9e;
+    background-color:rgb(14, 14, 14);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    border: #911c9e solid 1px;
+    transition: transform 0.3s ease;
+}
+
+.estilo-filosofia__conteudo__button:hover{
+    transform: scale(1.12);
 }
 
 .trabalhos{
@@ -243,16 +307,39 @@ body{
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+    border: 3px solid transparent;
+    transition: 0.1s ease;
+}
+
+.trabalhos__conteudo__imagens img:hover{
+    border: 3px solid #911c9e;
+    transform: scale(1.02);
+}
+
+.trabalhos__conteudo__button {
+    text-decoration: none;
+    color: #911c9e;
+    background-color:rgb(14, 14, 14);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1% 2% 1% 2%;
+    border-radius: 10px;
+    border: #911c9e solid 1px;
+    transition: transform 0.3s ease;
+}
+
+.trabalhos__conteudo__button:hover{
+    transform: scale(1.12);
 }
 
 .contato{
-    padding: 1% 10%;
+    padding: 1% 20% 3% 20%;
     background-color: rgb(14, 14, 14);
 }
 
 .contato__conteudo{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 25px;
 }
 
@@ -275,11 +362,169 @@ body{
 .contato__conteudo__formulario{
     display: flex;
     justify-content: center;
+    border-radius: 10px;
+    background-color: black;
+    border: #911c9e 2px solid;
+}
+
+.contato__conteudo__formulario h2 {
+    font-size: 2rem;
 }
 
 .contato__conteudo__formulario form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 10px;
+    padding: 2% 5%;
+    border-radius: 10px;
+    width: 35%;
+}
+
+.contato__conteudo__formulario input {
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(14, 14, 14);
+    border: 1px solid #703676;
+    border-radius: 5px;
+    color: white;
+}
+
+.contato__conteudo__formulario textarea {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(14, 14, 14);
+    border: 1px solid #703676;
+    color: white;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contato__conteudo__formulario button {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(14, 14, 14);
+    border: 1px solid #703676;
+    color: white;
+    font-weight: 400;
+    font-size: 1.1rem;
+    width: 300px;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.contato__conteudo__formulario button:hover{
+    transform: scale(1.08);
+    box-shadow: 2px 2px 2px #911c9e;
+}
+
+.contato__conteudo__wpp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    padding: 1% 2%;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.contato__conteudo__wpp a {
+    background-color:rgb(14, 14, 14);
+    width: 50%;
+    padding: 5%;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid rgb(145, 28, 158);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.contato__conteudo__wpp a:hover{
+    transform: scale(1.12);
+    box-shadow: 4px 4px 4px #911c9e;
+}
+
+.contato__conteudo__wpp p {
+    text-align: center;
+}
+
+.rodape {
+    padding: 1% 15%;
+    position: relative;
+    z-index: 1;
+}
+
+.rodape::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(imagens/bannerryan.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7; /* controla a opacidade da imagem */
+    z-index: -1; /* mantém a imagem no fundo */
+}
+
+.rodape__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.rodape__conteudo__logo {
+    font-size: 2.5rem;
+}
+
+.rodape__conteudo__nav{
+    display: flex;
+    gap: 10px;
+}
+
+.rodape__conteudo__nav__link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.rodape__conteudo__nav__link:hover{
+    color: #911c9e;
+}
+
+.rodape__conteudo__redes {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.rodape__conteudo__redes .fa-brands {
+    background-color: rgb(14, 14, 14);
+    padding: 8px;
+    border-radius: 30px;
+}
+
+.rodape__conteudo__copy{
+    padding: 2% 0% 0% 0%;
+}
+
+.rodape__conteudo__copy p {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+@media (min-width: 843px){
+    
+}
+
+@media (max-width: 768px){
+
+
 }

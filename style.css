@@ -533,10 +533,6 @@ body{
         overflow-x: hidden;
     }
 
-    .cabecalho__conteudo {
-        display: none;
-    }
-
     .sobremim {
         flex-direction: column-reverse;
         padding: 10% 15%;
@@ -673,10 +669,6 @@ body{
 
     body{
         overflow-x: hidden;
-    }
-
-    .cabecalho__conteudo {
-        display: none;
     }
 
     .sobremim {
@@ -818,7 +810,7 @@ body{
     }
 
     .cabecalho__conteudo {
-        display: none;
+        margin: 0% 4% 0% 0%;
     }
 
     .sobremim {
@@ -960,7 +952,7 @@ body{
     }
 
     .cabecalho__conteudo {
-        display: none;
+        margin: 0% 7% 0% 0%;
     }
 
     .sobremim {

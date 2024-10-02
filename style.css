@@ -7,6 +7,10 @@
     font-family: "Archivo Narrow", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: black;
     color: white;
@@ -30,6 +34,7 @@ body{
 .cabecalho__conteudo__link{
     color: white;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .cabecalho__conteudo__link:hover{
@@ -161,7 +166,7 @@ body{
 
 .portfolio__conteudo__imagens img {
     max-width: 100%;
-    width: 18%;
+    width: 16.1%;
     object-fit: cover;
     border-radius: 10px;
     border: 3px solid transparent;
@@ -305,7 +310,7 @@ body{
 }
 
 .trabalhos__conteudo__imagens img {
-    width: 18%;
+    width: 16.1%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -522,10 +527,7 @@ body{
     font-style: italic;
 }
 
-@media (max-width: 843px){
-}
-
-@media (max-width: 768px){
+@media (max-width: 1280px){
 
     body{
         overflow-x: hidden;
@@ -562,13 +564,17 @@ body{
     }
 
     .portfolio__conteudo__imagens {
-        overflow-x: scroll;
         white-space: nowrap;
+        overflow-x: scroll;
         display: inline;
     }
 
     .portfolio__conteudo__imagens img{
         width: 70%;
+    }
+
+    .portfolio__conteudo__imagens img:hover{
+        transform: scale(1);
     }
 
     .portfolio__conteudo__button{
@@ -616,14 +622,17 @@ body{
     }
 
     .trabalhos__conteudo__imagens{
-        flex-wrap: nowrap;
         overflow-x: scroll;
         white-space: nowrap;
-        display: inline-block;
+        display: inline;
     }
 
     .trabalhos__conteudo__imagens img{
         width: 70%;
+    }
+
+    .trabalhos__conteudo__imagens img:hover{
+        transform: scale(1);
     }
 
     .trabalhos__conteudo__button{
@@ -656,6 +665,577 @@ body{
     .contato__conteudo__wpp{
         width: 100%;
         padding: 0% 0% 10% 0%;
+    }
+    
+}
+
+@media (max-width: 1630px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .cabecalho__conteudo {
+        display: none;
+    }
+
+    .sobremim {
+        flex-direction: column-reverse;
+        padding: 2% 15%;
+    }
+
+    .sobremim__conteudo{
+        width: 100%;
+        padding: 5% 0% 0% 0%;
+    }
+
+    .sobremim__conteudo__imagem{
+        width: 40%;
+    }
+
+    .portfolio__conteudo{
+        text-align: center;
+    }
+
+    .portfolio__conteudo__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .portfolio__conteudo__titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio__conteudo__imagens {
+        white-space: nowrap;
+        overflow-x: scroll;
+        display: inline;
+    }
+
+    .portfolio__conteudo__imagens img{
+        width: 30%;
+    }
+
+    .portfolio__conteudo__imagens img:hover{
+        transform: scale(1);
+    }
+
+    .portfolio__conteudo__button{
+        margin: 0% 0% 2% 0%;
+    }
+
+    .estilo-filosofia__titulo{
+        text-align: center;
+    }
+
+    .estilo-filosofia__titulo p {
+        font-size: 1.2rem;
+    }
+
+    .estilo-filosofia__titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    .estilo-filosofia__conteudo {
+        flex-direction: column;
+    }
+
+    .estilo-filosofia__conteudo__texto{
+        width: 100%;
+    }
+
+    .estilo-filosofia__conteudo__imagens__imagem{
+        width: 30%;
+    }
+
+    .estilo-filosofia__conteudo__button{
+        margin: 0% 0% 2% 0%;
+    }
+
+    .trabalhos__conteudo{
+        text-align: center;
+    }
+
+    .trabalhos__conteudo__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .trabalhos__conteudo__titulo h2{
+        font-size: 1.8rem;
+    }
+
+    .trabalhos__conteudo__imagens{
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: inline;
+    }
+
+    .trabalhos__conteudo__imagens img{
+        width: 30%;
+    }
+
+    .trabalhos__conteudo__imagens img:hover{
+        transform: scale(1);
+    }
+
+    .trabalhos__conteudo__button{
+        margin: 0% 0% 2% 0%;
+    }
+
+    .contato{
+        padding: 1% 10% 10% 10%;
+        background-color: rgb(14, 14, 14);
+        text-align: center;
+    }
+
+    .contato__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .contato__titulo h2{
+        font-size: 1.8rem;
+    }
+
+    .contato__conteudo__formulario{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contato__conteudo__formulario form{
+        width: 100%;
+    }
+
+    .contato__conteudo__wpp{
+        width: 100%;
+        padding: 0% 0% 5% 0%;
+    }
+    
+}
+
+@media (max-width: 1280px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .cabecalho__conteudo {
+        display: none;
+    }
+
+    .sobremim {
+        flex-direction: column-reverse;
+        padding: 2% 15%;
+    }
+
+    .sobremim__conteudo{
+        width: 100%;
+        padding: 5% 0% 0% 0%;
+    }
+
+    .sobremim__conteudo__imagem{
+        width: 41%;
+    }
+
+    .portfolio__conteudo{
+        text-align: center;
+    }
+
+    .portfolio__conteudo__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .portfolio__conteudo__titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio__conteudo__imagens {
+        white-space: nowrap;
+        overflow-x: scroll;
+        display: inline;
+    }
+
+    .portfolio__conteudo__imagens img{
+        width: 30%;
+    }
+
+    .portfolio__conteudo__imagens img:hover{
+        transform: scale(1);
+    }
+
+    .portfolio__conteudo__button{
+        margin: 0% 0% 2% 0%;
+    }
+
+    .estilo-filosofia__titulo{
+        text-align: center;
+    }
+
+    .estilo-filosofia__titulo p {
+        font-size: 1.2rem;
+    }
+
+    .estilo-filosofia__titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    .estilo-filosofia__conteudo {
+        flex-direction: column;
+    }
+
+    .estilo-filosofia__conteudo__texto{
+        width: 100%;
+    }
+
+    .estilo-filosofia__conteudo__imagens__imagem{
+        width: 30%;
+    }
+
+    .estilo-filosofia__conteudo__button{
+        margin: 0% 0% 2% 0%;
+    }
+
+    .trabalhos__conteudo{
+        text-align: center;
+    }
+
+    .trabalhos__conteudo__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .trabalhos__conteudo__titulo h2{
+        font-size: 1.8rem;
+    }
+
+    .trabalhos__conteudo__imagens{
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: inline;
+    }
+
+    .trabalhos__conteudo__imagens img{
+        width: 30%;
+    }
+
+    .trabalhos__conteudo__imagens img:hover{
+        transform: scale(1);
+    }
+
+    .trabalhos__conteudo__button{
+        margin: 0% 0% 2% 0%;
+    }
+
+    .contato{
+        padding: 1% 10% 10% 10%;
+        background-color: rgb(14, 14, 14);
+        text-align: center;
+    }
+
+    .contato__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .contato__titulo h2{
+        font-size: 1.8rem;
+    }
+
+    .contato__conteudo__formulario{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contato__conteudo__formulario form{
+        width: 100%;
+    }
+
+    .contato__conteudo__wpp{
+        width: 100%;
+        padding: 0% 0% 5% 0%;
+    }
+    
+}
+
+@media (max-width: 1024px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .cabecalho__conteudo {
+        display: none;
+    }
+
+    .sobremim {
+        flex-direction: column-reverse;
+        padding: 2% 15%;
+    }
+
+    .sobremim__conteudo{
+        width: 100%;
+        padding: 5% 0% 0% 0%;
+    }
+
+    .sobremim__conteudo__imagem{
+        width: 60%;
+    }
+
+    .portfolio__conteudo{
+        text-align: center;
+    }
+
+    .portfolio__conteudo__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .portfolio__conteudo__titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio__conteudo__imagens {
+        white-space: nowrap;
+        overflow-x: scroll;
+        display: inline;
+    }
+
+    .portfolio__conteudo__imagens img{
+        width: 30%;
+    }
+
+    .portfolio__conteudo__imagens img:hover{
+        transform: scale(1);
+    }
+
+    .portfolio__conteudo__button{
+        margin: 0% 0% 2% 0%;
+    }
+
+    .estilo-filosofia__titulo{
+        text-align: center;
+    }
+
+    .estilo-filosofia__titulo p {
+        font-size: 1.2rem;
+    }
+
+    .estilo-filosofia__titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    .estilo-filosofia__conteudo {
+        flex-direction: column;
+    }
+
+    .estilo-filosofia__conteudo__texto{
+        width: 100%;
+    }
+
+    .estilo-filosofia__conteudo__imagens__imagem{
+        width: 30%;
+    }
+
+    .estilo-filosofia__conteudo__button{
+        margin: 0% 0% 2% 0%;
+    }
+
+    .trabalhos__conteudo{
+        text-align: center;
+    }
+
+    .trabalhos__conteudo__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .trabalhos__conteudo__titulo h2{
+        font-size: 1.8rem;
+    }
+
+    .trabalhos__conteudo__imagens{
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: inline;
+    }
+
+    .trabalhos__conteudo__imagens img{
+        width: 30%;
+    }
+
+    .trabalhos__conteudo__imagens img:hover{
+        transform: scale(1);
+    }
+
+    .trabalhos__conteudo__button{
+        margin: 0% 0% 2% 0%;
+    }
+
+    .contato{
+        padding: 1% 10% 10% 10%;
+        background-color: rgb(14, 14, 14);
+        text-align: center;
+    }
+
+    .contato__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .contato__titulo h2{
+        font-size: 1.8rem;
+    }
+
+    .contato__conteudo__formulario{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contato__conteudo__formulario form{
+        width: 100%;
+    }
+
+    .contato__conteudo__wpp{
+        width: 100%;
+        padding: 0% 0% 5% 0%;
+    }
+    
+}
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .cabecalho__conteudo {
+        display: none;
+    }
+
+    .apresentacao__conteudo h1{
+        font-size: 2rem;
+    }
+
+    .sobremim {
+        flex-direction: column-reverse;
+        padding: 6% 15%;
+    }
+
+    .sobremim__conteudo{
+        width: 100%;
+        padding: 5% 0% 0% 0%;
+    }
+
+    .sobremim__conteudo__imagem{
+        width: 90%;
+    }
+
+    .portfolio__conteudo{
+        text-align: center;
+    }
+
+    .portfolio__conteudo__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .portfolio__conteudo__titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio__conteudo__imagens {
+        white-space: nowrap;
+        overflow-x: scroll;
+        display: inline;
+    }
+
+    .portfolio__conteudo__imagens img{
+        width: 55%;
+    }
+
+    .portfolio__conteudo__imagens img:hover{
+        transform: scale(1);
+    }
+
+    .portfolio__conteudo__button{
+        margin: 0% 0% 5% 0%;
+    }
+
+    .estilo-filosofia__titulo{
+        text-align: center;
+    }
+
+    .estilo-filosofia__titulo p {
+        font-size: 1.2rem;
+    }
+
+    .estilo-filosofia__titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    .estilo-filosofia__conteudo {
+        flex-direction: column;
+    }
+
+    .estilo-filosofia__conteudo__texto{
+        width: 100%;
+    }
+
+    .estilo-filosofia__conteudo__imagens__imagem{
+        width: 55%;
+    }
+
+    .estilo-filosofia__conteudo__button{
+        margin: 0% 0% 5% 0%;
+    }
+
+    .trabalhos__conteudo{
+        text-align: center;
+    }
+
+    .trabalhos__conteudo__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .trabalhos__conteudo__titulo h2{
+        font-size: 1.8rem;
+    }
+
+    .trabalhos__conteudo__imagens{
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: inline;
+    }
+
+    .trabalhos__conteudo__imagens img{
+        width: 55%;
+    }
+
+    .trabalhos__conteudo__imagens img:hover{
+        transform: scale(1);
+    }
+
+    .trabalhos__conteudo__button{
+        margin: 0% 0% 5% 0%;
+    }
+
+    .contato{
+        padding: 1% 5% 10% 5%;
+        background-color: rgb(14, 14, 14);
+    }
+
+    .contato__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .contato__titulo h2{
+        font-size: 1.8rem;
+    }
+
+    .contato__conteudo__formulario{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contato__conteudo__formulario form{
+        width: 100%;
+    }
+
+    .contato__conteudo__wpp{
+        width: 100%;
+        padding: 0% 0% 5% 0%;
     }
     
 }

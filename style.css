@@ -1233,5 +1233,10 @@ body{
     .rodape__conteudo__nav__link{
         white-space: nowrap;
     }
+
+    .rodape__conteudo__copy p{
+        white-space: nowrap;
+        font-size: 0.8rem;
+    }
     
 }

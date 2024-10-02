@@ -1232,11 +1232,12 @@ body{
 
     .rodape__conteudo__nav__link{
         white-space: nowrap;
+        font-size: 1rem;
     }
 
     .rodape__conteudo__copy p{
         white-space: nowrap;
-        font-size: 0.8rem;
+        font-size: 0.66rem;
     }
     
 }

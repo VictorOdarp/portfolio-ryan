@@ -10,22 +10,24 @@
 </head>
 <body>
     <header id="home" class="cabecalho">
-        <h1>Logo</h1>
+        <img class="cabecalho__logo" src="imagens/ryanlogo.png" alt="">
         <nav class="cabecalho__conteudo">
-            <a class="cabecalho__conteudo__link" href="#home">Home</a>
-            <a class="cabecalho__conteudo__link" href="#portfolio">Portfolio</a>
-            <a class="cabecalho__conteudo__link" href="#estilo-filosofia">Estilo & Filosofia</a>
-            <a class="cabecalho__conteudo__link" href="#trabalhos">Trabalhos</a>
-            <a class="cabecalho__conteudo__link" href="#contato">Contato</a>
-            <a href="https://wa.me/554199953494?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20seu%20trabalho.%20" class="cabecalho__conteudo__button">
-                <p><i class="fa-brands fa-whatsapp"></i></p>
-            </a>
+            <ul id="menuList">
+                <li><a class="cabecalho__conteudo__link" href="#home">Home</a></li>
+                <li><a class="cabecalho__conteudo__link" href="#portfolio">Portfolio</a></li>
+                <li><a class="cabecalho__conteudo__link" href="#estilo-filosofia">Estilo & Filosofia</a></li>
+                <li><a class="cabecalho__conteudo__link" href="#trabalhos">Trabalhos</a></li>
+                <li><a class="cabecalho__conteudo__link" href="#contato">Contato</a></li>
+            </ul>
         </nav>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
     </header>
 
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <h1>Ryan Felipe | Tatuador</h1>
+            <h1>Ryan Felipe <strong style="color: var(--primary-color);">|</strong> Tatuador</h1>
             <p>Hada ni aru mono wa kokoro ni utsuru</p>
         </section>
     </main>
@@ -170,7 +172,7 @@
     <footer class="rodape">
         <section class="rodape__conteudo">
             <div class="rodape__conteudo__logo">
-                <h2>Logo</h2>
+                <img src="imagens/ryanlogo.png" alt="">
             </div>
 
             <div class="rodape__conteudo__nav">
@@ -182,8 +184,8 @@
             </div>
 
             <div class="rodape__conteudo__redes">
-                <a href="https://www.tiktok.com/@ryabrazz"><i class="fa-brands fa-tiktok" style="color: #911c9e;"></i></a>
-                <a href="https://www.instagram.com/ryyzarts/"><i class="fa-brands fa-instagram" style="color: #911c9e;"></i></a>
+                <a href="https://www.tiktok.com/@ryabrazz"><i class="fa-brands fa-tiktok" style="color: var(--primary-color);"></i></a>
+                <a href="https://www.instagram.com/ryyzarts/"><i class="fa-brands fa-instagram" style="color: var(--primary-color);"></i></a>
                 
             </div>
 
@@ -192,5 +194,7 @@
             </div>
         </section>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

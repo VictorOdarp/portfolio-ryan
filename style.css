@@ -7,6 +7,10 @@
     font-family: "Archivo Narrow", sans-serif;
 }
 
+:root{
+    --primary-color: #7C0202;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -19,16 +23,28 @@ body{
 
 .cabecalho{
     display: flex;
+    position: relative;
     justify-content: space-between;
+    align-items: center;
     color: white;
     background-color: black;
-    padding: 1% 12%;
+    padding: 0.5% 6%;
 }
 
-.cabecalho__conteudo{
+.cabecalho__logo{
+    width: 7%;
+    border-radius: 5px;
+    border: 0.5px solid var(--primary-color);
+}
+
+.cabecalho__conteudo ul{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
+}
+
+.cabecalho__conteudo ul li {
+    list-style-type: none;
 }
 
 .cabecalho__conteudo__link{
@@ -38,12 +54,12 @@ body{
 }
 
 .cabecalho__conteudo__link:hover{
-    color: #911c9e;
+    color: var(--primary-color);
 }
 
 .cabecalho__conteudo__button{
-    padding: 3% 15%;
-    border: 2px solid #911c9e;
+    padding: 3% 13%;
+    border: 2px solid var(--primary-color);
     border-radius: 10px;
     background-color: rgb(14, 14, 14);
     cursor: pointer;
@@ -58,6 +74,14 @@ body{
 
 .fa-brands{
     font-size: 25px;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    font-size: 2rem;
 }
 
 .apresentacao {
@@ -95,6 +119,8 @@ body{
     color: white;
     font-family: sans-serif;
     font-size: 0.9rem;
+    font-weight: 600;
+    font-style: oblique;
 }
 
 .sobremim {
@@ -120,13 +146,14 @@ body{
 
 .sobremim__conteudo__texto h2 {
     font-size: 1.8rem;
-    color: #911c9e;
-    box-shadow: 2px 2px 2px #703676;
+    color: var(--primary-color);
+    box-shadow: 2px 2px 2px var(--primary-color);
 }
 
 .sobremim__conteudo__imagem{
     width: 22%;
     border-radius: 10px;
+    border: 2px solid var(--primary-color);
 }
 
 .portfolio {
@@ -149,7 +176,7 @@ body{
 
 .portfolio__conteudo__titulo p{
     font-size: 1.4rem;
-    color: #911c9e;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
@@ -174,19 +201,19 @@ body{
 }
 
 .portfolio__conteudo__imagens img:hover {
-    border: 3px solid #911c9e;
+    border: 3px solid var(--primary-color);
     transform: scale(1.02);
 }
 
 .portfolio__conteudo__button {
     text-decoration: none;
-    color: #911c9e;
+    color: var(--primary-color);
     background-color:rgb(14, 14, 14);
     font-size: 1.5rem;
     font-weight: 600;
     padding: 1% 2% 1% 2%;
     border-radius: 10px;
-    border: #911c9e solid 1px;
+    border: var(--primary-color) solid 1px;
     transition: transform 0.3s ease;
 }
 
@@ -212,7 +239,7 @@ body{
 }
 
 .estilo-filosofia__titulo p{
-    color: #911c9e;
+    color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 600;
 }
@@ -254,19 +281,19 @@ body{
 
 .estilo-filosofia__conteudo__texto__estrofe h2{
     font-size: 2rem;
-    color: #911c9e;
-    box-shadow: 2px 2px 2px #911c9e;
+    color: var(--primary-color);
+    box-shadow: 2px 2px 2px var(--primary-color);
 }
 
 .estilo-filosofia__conteudo__button {
     text-decoration: none;
-    color: #911c9e;
+    color: var(--primary-color);
     background-color:rgb(14, 14, 14);
     font-size: 1.5rem;
     font-weight: 600;
     padding: 1% 2% 1% 2%;
     border-radius: 10px;
-    border: #911c9e solid 1px;
+    border: var(--primary-color) solid 1px;
     transition: transform 0.3s ease;
 }
 
@@ -293,7 +320,7 @@ body{
 }
 
 .trabalhos__conteudo__titulo p{
-    color:#911c9e;
+    color:var(--primary-color);
     font-weight: 600;
     font-size: 1.3rem;
 }
@@ -319,19 +346,19 @@ body{
 }
 
 .trabalhos__conteudo__imagens img:hover{
-    border: 3px solid #911c9e;
+    border: 3px solid var(--primary-color);
     transform: scale(1.02);
 }
 
 .trabalhos__conteudo__button {
     text-decoration: none;
-    color: #911c9e;
+    color: var(--primary-color);
     background-color:rgb(14, 14, 14);
     font-size: 1.5rem;
     font-weight: 600;
     padding: 1% 2% 1% 2%;
     border-radius: 10px;
-    border: #911c9e solid 1px;
+    border: var(--primary-color) solid 1px;
     transition: transform 0.3s ease;
 }
 
@@ -357,7 +384,7 @@ body{
 }
 
 .contato__titulo p {
-    color:#911c9e;
+    color:var(--primary-color);
     font-weight: 600;
     font-size: 1.3rem;
 }
@@ -371,7 +398,7 @@ body{
     justify-content: center;
     border-radius: 10px;
     background-color: black;
-    border: #911c9e 2px solid;
+    border: var(--primary-color) 2px solid;
 }
 
 .contato__conteudo__formulario h2 {
@@ -393,7 +420,7 @@ body{
     width: 300px;
     padding: 10px;
     background-color: rgb(14, 14, 14);
-    border: 1px solid #703676;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     color: white;
 }
@@ -402,7 +429,7 @@ body{
     width: 300px;
     height: 150px;
     background-color: rgb(14, 14, 14);
-    border: 1px solid #703676;
+    border: 1px solid var(--primary-color);
     color: white;
     border-radius: 5px;
     resize: none;
@@ -413,7 +440,7 @@ body{
     border-radius: 10px;
     padding: 15px;
     background-color: rgb(14, 14, 14);
-    border: 1px solid #703676;
+    border: 1px solid var(--primary-color);
     color: white;
     font-weight: 400;
     font-size: 1.1rem;
@@ -424,7 +451,7 @@ body{
 
 .contato__conteudo__formulario button:hover{
     transform: scale(1.08);
-    box-shadow: 2px 2px 2px #911c9e;
+    box-shadow: 2px 2px 2px var(--primary-color);
 }
 
 .contato__conteudo__wpp {
@@ -446,13 +473,13 @@ body{
     text-align: center;
     color: white;
     border-radius: 10px;
-    border: 2px solid rgb(145, 28, 158);
+    border: 2px solid var(--primary-color);
     transition: box-shadow 0.5s ease, transform 0.5s ease;
 }
 
 .contato__conteudo__wpp a:hover{
     transform: scale(1.12);
-    box-shadow: 4px 4px 4px #911c9e;
+    box-shadow: 4px 4px 4px var(--primary-color);
 }
 
 .contato__conteudo__wpp p {
@@ -491,6 +518,12 @@ body{
     font-size: 2.5rem;
 }
 
+.rodape__conteudo__logo img {
+    width: 120px;
+    border-radius: 5px;
+    border: 0.5px solid var(--primary-color);
+}
+
 .rodape__conteudo__nav{
     display: flex;
     gap: 10px;
@@ -503,7 +536,7 @@ body{
 }
 
 .rodape__conteudo__nav__link:hover{
-    color: #911c9e;
+    color: var(--primary-color);
 }
 
 .rodape__conteudo__redes {
@@ -667,34 +700,12 @@ body{
 
 @media (max-width: 1630px){
 
-    body{
-        overflow-x: hidden;
+    .cabecalho__logo{
+        width: 8%;
     }
-
-    .sobremim {
-        flex-direction: column-reverse;
-        padding: 2% 15%;
-    }
-
-    .sobremim__conteudo{
-        width: 100%;
-        padding: 5% 0% 0% 0%;
-    }
-
+    
     .sobremim__conteudo__imagem{
         width: 40%;
-    }
-
-    .portfolio__conteudo{
-        text-align: center;
-    }
-
-    .portfolio__conteudo__titulo p{
-        font-size: 1.2rem;
-    }
-
-    .portfolio__conteudo__titulo h2 {
-        font-size: 1.8rem;
     }
 
     .portfolio__conteudo__imagens {
@@ -711,50 +722,6 @@ body{
         transform: scale(1);
     }
 
-    .portfolio__conteudo__button{
-        margin: 0% 0% 2% 0%;
-    }
-
-    .estilo-filosofia__titulo{
-        text-align: center;
-    }
-
-    .estilo-filosofia__titulo p {
-        font-size: 1.2rem;
-    }
-
-    .estilo-filosofia__titulo h2 {
-        font-size: 1.8rem;
-    }
-
-    .estilo-filosofia__conteudo {
-        flex-direction: column;
-    }
-
-    .estilo-filosofia__conteudo__texto{
-        width: 100%;
-    }
-
-    .estilo-filosofia__conteudo__imagens__imagem{
-        width: 30%;
-    }
-
-    .estilo-filosofia__conteudo__button{
-        margin: 0% 0% 2% 0%;
-    }
-
-    .trabalhos__conteudo{
-        text-align: center;
-    }
-
-    .trabalhos__conteudo__titulo p{
-        font-size: 1.2rem;
-    }
-
-    .trabalhos__conteudo__titulo h2{
-        font-size: 1.8rem;
-    }
-
     .trabalhos__conteudo__imagens{
         overflow-x: scroll;
         white-space: nowrap;
@@ -769,48 +736,17 @@ body{
         transform: scale(1);
     }
 
-    .trabalhos__conteudo__button{
-        margin: 0% 0% 2% 0%;
-    }
-
     .contato{
-        padding: 1% 10% 10% 10%;
-        background-color: rgb(14, 14, 14);
+        padding: 1% 10% 5% 10%;
         text-align: center;
     }
 
-    .contato__titulo p{
-        font-size: 1.2rem;
-    }
-
-    .contato__titulo h2{
-        font-size: 1.8rem;
-    }
-
-    .contato__conteudo__formulario{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .contato__conteudo__formulario form{
-        width: 100%;
-    }
-
-    .contato__conteudo__wpp{
-        width: 100%;
-        padding: 0% 0% 5% 0%;
-    }
-    
 }
 
 @media (max-width: 1280px){
 
-    body{
-        overflow-x: hidden;
-    }
-
-    .cabecalho__conteudo {
-        margin: 0% 4% 0% 0%;
+    .cabecalho__logo{
+        width: 11%;
     }
 
     .sobremim {
@@ -947,12 +883,8 @@ body{
 
 @media (max-width: 1024px){
 
-    body{
-        overflow-x: hidden;
-    }
-
-    .cabecalho__conteudo {
-        margin: 0% 7% 0% 0%;
+    .cabecalho__logo{
+        width: 14%;
     }
 
     .sobremim {
@@ -1089,12 +1021,24 @@ body{
 
 @media (max-width: 768px){
 
-    body{
-        overflow-x: hidden;
+    .cabecalho__conteudo ul{
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        right: 0px;
+        flex-direction: column;
+        z-index: 2;
+        text-align: center;
+        background-color: black;
+        overflow: hidden;
     }
 
-    .cabecalho__conteudo {
-        display: none;
+    .menu-icon{
+        display: block;
+    }
+
+    #menuList{
+        transition: all 0.5s;
     }
 
     .apresentacao__conteudo h1{
@@ -1240,4 +1184,163 @@ body{
         font-size: 0.66rem;
     }
     
+}
+
+@media (max-width: 480px) {
+
+    .cabecalho__conteudo ul{
+        top: 100%;
+        
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .cabecalho__logo{
+        width: 28%;
+    }
+
+    .apresentacao__conteudo h1{
+        font-size: 2rem;
+    }
+
+    .sobremim {
+        flex-direction: column-reverse;
+        padding: 25% 15% 6% 15%;
+    }
+
+    .sobremim__conteudo{
+        width: 100%;
+        padding: 5% 0% 0% 0%;
+    }
+
+    .sobremim__conteudo__imagem{
+        width: 90%;
+    }
+
+    .portfolio__conteudo{
+        text-align: center;
+    }
+
+    .portfolio__conteudo__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .portfolio__conteudo__titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio__conteudo__imagens {
+        white-space: nowrap;
+        overflow-x: scroll;
+        display: inline;
+    }
+
+    .portfolio__conteudo__imagens img{
+        width: 55%;
+    }
+
+    .portfolio__conteudo__imagens img:hover{
+        transform: scale(1);
+    }
+
+    .portfolio__conteudo__button{
+        margin: 0% 0% 5% 0%;
+    }
+
+    .estilo-filosofia__titulo{
+        text-align: center;
+    }
+
+    .estilo-filosofia__titulo p {
+        font-size: 1.2rem;
+    }
+
+    .estilo-filosofia__titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    .estilo-filosofia__conteudo {
+        flex-direction: column;
+    }
+
+    .estilo-filosofia__conteudo__texto{
+        width: 100%;
+    }
+
+    .estilo-filosofia__conteudo__imagens__imagem{
+        width: 55%;
+    }
+
+    .estilo-filosofia__conteudo__button{
+        margin: 0% 0% 5% 0%;
+    }
+
+    .trabalhos__conteudo{
+        text-align: center;
+    }
+
+    .trabalhos__conteudo__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .trabalhos__conteudo__titulo h2{
+        font-size: 1.8rem;
+    }
+
+    .trabalhos__conteudo__imagens{
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: inline;
+    }
+
+    .trabalhos__conteudo__imagens img{
+        width: 55%;
+    }
+
+    .trabalhos__conteudo__imagens img:hover{
+        transform: scale(1);
+    }
+
+    .trabalhos__conteudo__button{
+        margin: 0% 0% 5% 0%;
+    }
+
+    .contato{
+        padding: 1% 5% 10% 5%;
+        background-color: rgb(14, 14, 14);
+    }
+
+    .contato__titulo p{
+        font-size: 1.2rem;
+    }
+
+    .contato__titulo h2{
+        font-size: 1.8rem;
+    }
+
+    .contato__conteudo__formulario{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contato__conteudo__formulario form{
+        width: 100%;
+    }
+
+    .contato__conteudo__wpp{
+        width: 100%;
+        padding: 0% 0% 5% 0%;
+    }
+
+    .rodape__conteudo__nav__link{
+        white-space: nowrap;
+        font-size: 1rem;
+    }
+
+    .rodape__conteudo__copy p{
+        white-space: nowrap;
+        font-size: 0.66rem;
+    }
 }

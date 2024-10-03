@@ -560,144 +560,6 @@ body{
     font-style: italic;
 }
 
-@media (max-width: 1280px){
-
-    body{
-        overflow-x: hidden;
-    }
-
-    .sobremim {
-        flex-direction: column-reverse;
-        padding: 10% 15%;
-    }
-
-    .sobremim__conteudo{
-        width: 100%;
-        padding: 5% 0% 0% 0%;
-    }
-
-    .sobremim__conteudo__imagem{
-        width: 90%;
-    }
-
-    .portfolio__conteudo{
-        text-align: center;
-    }
-
-    .portfolio__conteudo__titulo p{
-        font-size: 1.2rem;
-    }
-
-    .portfolio__conteudo__titulo h2 {
-        font-size: 1.8rem;
-    }
-
-    .portfolio__conteudo__imagens {
-        white-space: nowrap;
-        overflow-x: scroll;
-        display: inline;
-    }
-
-    .portfolio__conteudo__imagens img{
-        width: 70%;
-    }
-
-    .portfolio__conteudo__imagens img:hover{
-        transform: scale(1);
-    }
-
-    .portfolio__conteudo__button{
-        margin: 0% 0% 10% 0%;
-    }
-
-    .estilo-filosofia__titulo{
-        text-align: center;
-    }
-
-    .estilo-filosofia__titulo p {
-        font-size: 1.2rem;
-    }
-
-    .estilo-filosofia__titulo h2 {
-        font-size: 1.8rem;
-    }
-
-    .estilo-filosofia__conteudo {
-        flex-direction: column;
-    }
-
-    .estilo-filosofia__conteudo__texto{
-        width: 100%;
-    }
-
-    .estilo-filosofia__conteudo__imagens__imagem{
-        width: 50%;
-    }
-
-    .estilo-filosofia__conteudo__button{
-        margin: 0% 0% 10% 0%;
-    }
-
-    .trabalhos__conteudo{
-        text-align: center;
-    }
-
-    .trabalhos__conteudo__titulo p{
-        font-size: 1.2rem;
-    }
-
-    .trabalhos__conteudo__titulo h2{
-        font-size: 1.8rem;
-    }
-
-    .trabalhos__conteudo__imagens{
-        overflow-x: scroll;
-        white-space: nowrap;
-        display: inline;
-    }
-
-    .trabalhos__conteudo__imagens img{
-        width: 70%;
-    }
-
-    .trabalhos__conteudo__imagens img:hover{
-        transform: scale(1);
-    }
-
-    .trabalhos__conteudo__button{
-        margin: 0% 0% 10% 0%;
-    }
-
-    .contato{
-        padding: 1% 10% 10% 10%;
-        background-color: rgb(14, 14, 14);
-        text-align: center;
-    }
-
-    .contato__titulo p{
-        font-size: 1.2rem;
-    }
-
-    .contato__titulo h2{
-        font-size: 1.8rem;
-    }
-
-    .contato__conteudo__formulario{
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .contato__conteudo__formulario form{
-        width: 100%;
-    }
-
-    .contato__conteudo__wpp{
-        width: 100%;
-        padding: 0% 0% 10% 0%;
-    }
-    
-}
-
 @media (max-width: 1630px){
 
     .cabecalho__logo{
@@ -705,13 +567,7 @@ body{
     }
     
     .sobremim__conteudo__imagem{
-        width: 40%;
-    }
-
-    .portfolio__conteudo__imagens {
-        white-space: nowrap;
-        overflow-x: scroll;
-        display: inline;
+        width: 35%;
     }
 
     .portfolio__conteudo__imagens img{
@@ -720,12 +576,6 @@ body{
 
     .portfolio__conteudo__imagens img:hover{
         transform: scale(1);
-    }
-
-    .trabalhos__conteudo__imagens{
-        overflow-x: scroll;
-        white-space: nowrap;
-        display: inline;
     }
 
     .trabalhos__conteudo__imagens img{
@@ -749,11 +599,6 @@ body{
         width: 11%;
     }
 
-    .sobremim {
-        flex-direction: column-reverse;
-        padding: 2% 15%;
-    }
-
     .sobremim__conteudo{
         width: 100%;
         padding: 5% 0% 0% 0%;
@@ -773,12 +618,6 @@ body{
 
     .portfolio__conteudo__titulo h2 {
         font-size: 1.8rem;
-    }
-
-    .portfolio__conteudo__imagens {
-        white-space: nowrap;
-        overflow-x: scroll;
-        display: inline;
     }
 
     .portfolio__conteudo__imagens img{
@@ -831,12 +670,6 @@ body{
 
     .trabalhos__conteudo__titulo h2{
         font-size: 1.8rem;
-    }
-
-    .trabalhos__conteudo__imagens{
-        overflow-x: scroll;
-        white-space: nowrap;
-        display: inline;
     }
 
     .trabalhos__conteudo__imagens img{
@@ -1031,6 +864,11 @@ body{
         text-align: center;
         background-color: black;
         overflow: hidden;
+        gap: 0;
+    }
+
+    .cabecalho__conteudo ul li{
+        padding: 1%;
     }
 
     .menu-icon{
@@ -1207,7 +1045,6 @@ body{
 
     .sobremim {
         flex-direction: column-reverse;
-        padding: 25% 15% 6% 15%;
     }
 
     .sobremim__conteudo{
